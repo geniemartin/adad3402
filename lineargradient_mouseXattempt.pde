@@ -2,7 +2,7 @@
 int Y_AXIS = 1;
 color c1, c2;
 
-int r,g,b;
+//int r,g,b;
 
 void setup() {
   size(640, 360);
