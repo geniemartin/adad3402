@@ -11,14 +11,14 @@ class Animation {
 
     for (int i = 0; i < imageCount; i++) {
       // Use nf() to number format 'i' into four digits
-      String filename = imagePrefix + nf(i, 4) + ".gif";
+      String filename = imagePrefix + nf(i, 2) + ".png";
       images[i] = loadImage(filename);
     }
   }
 
-  void display(float xpos, float ypos) {
+  void display() {
     frame = (frame+1) % imageCount;
-    image(images[frame], xpos, ypos);
+    image(images[frame], 0, 0);
   }
   
   int getWidth() {
