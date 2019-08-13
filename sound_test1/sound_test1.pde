@@ -9,7 +9,7 @@ void setup() {
   size(640, 360);
   backing = new SoundFile(this, "BACKING.wav");
   //BACKING TRACK VOL.
-  backing.amp(0.1);
+  backing.amp(0.3);
   //BACKING TRACK SPEED
   backing.rate(0.25);
   //REPEAT
